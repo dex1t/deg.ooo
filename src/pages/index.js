@@ -49,15 +49,27 @@ const IndexPage = () => (
       <URLList>
         <li>
           <a href="http://blog.deg.ooo/">http://blog.deg.ooo/</a>
+        </li>
+        <li>
           <a href="https://twitter.com/dex1t">https://twitter.com/dex1t</a>
+        </li>
+        <li>
           <a href="https://github.com/dex1t">https://github.com/dex1t</a>
+        </li>
+        <li>
           <a href="https://speakerdeck.com/dex1t">
             https://speakerdeck.com/dex1t
           </a>
+        </li>
+        <li>
           <a href="https://instagram.com/dex1t">https://instagram.com/dex1t</a>
+        </li>
+        <li>
           <a href="https://www.facebook.com/takayad">
             https://www.facebook.com/takayad
           </a>
+        </li>
+        <li>
           <a href="https://www.linkedin.com/in/dex1t">
             https://www.linkedin.com/in/dex1t
           </a>
