@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 
 import Header from '../components/header'
 import 'normalize.css'
+import favicon from '../images/favicon.ico'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -15,8 +16,15 @@ const Layout = ({ children, data }) => (
           content:
             'Takaya Deguchi (dex1t) is UX Engineer & Product Manager in Tokyo.',
         },
+        {
+          name: 'author',
+          content: '出口貴也 / Takaya Deguchi / dex1t',
+        },
       ]}
-    />
+    >
+      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto" />
+      <link rel="icon" href={favicon} />
+    </Helmet>
     <main>{children()}</main>
   </div>
 )
