@@ -5,6 +5,8 @@ import * as animationData from '../images/loading.json'
 
 import '../base.css' //tent
 
+const notionUrl =
+  'https://www.notion.so/About-dex1t-65fa41c6c6804426bef7adb2a66c5117'
 const Container = styled.div`
   display: flex;
   align-items: flex-start;
@@ -16,6 +18,16 @@ const IndexPage = () => (
       options={{ loop: true, autoplay: true, animationData: animationData }}
       height={200}
       width={200}
+      eventListeners={[
+        {
+          eventName: 'loopComplete',
+          callback: () => {
+            setTimeout(() => {
+              location.href = notionUrl
+            }, 5)
+          },
+        },
+      ]}
     />
   </Container>
 )
