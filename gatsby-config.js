@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Takaya Deguchi - dex1t',
+    title: 'ddd',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
