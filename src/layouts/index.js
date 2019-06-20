@@ -2,9 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import Header from '../components/header'
 import 'normalize.css'
 import favicon from '../images/favicon.ico'
+import ogp from '../images/ogp.png'
+
+const desc =
+  '出口貴也 @dex1t | UXエンジニア。戦略作りや体験設計から、UIデザイン、Webやモバイルアプリの開発まで、一気通貫したプロダクトづくりが強み。デザインとエンジニアリングを行き来しながら、新しいモノをつくるのが好き。'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -13,17 +16,31 @@ const Layout = ({ children, data }) => (
       meta={[
         {
           name: 'description',
-          content:
-            'Takaya Deguchi (dex1t) is UX Engineer & Product Manager in Tokyo.',
+          content: desc,
         },
         {
           name: 'author',
-          content: '出口貴也 / Takaya Deguchi / dex1t',
+          content: '出口 貴也',
         },
+        {
+          name: 'author',
+          content: 'Takaya Deguchi',
+        },
+        {
+          name: 'author',
+          content: 'dex1t',
+        },
+        {
+          property: 'og:image',
+          content: ogp,
+        },
+        { property: 'og:description', content: desc },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:site', content: '@dex1t' },
       ]}
     >
-      <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto" />
       <link rel="icon" href={favicon} />
+      <link rel="canonical" href="https://deg.ooo" />
     </Helmet>
     <main>{children()}</main>
   </div>
