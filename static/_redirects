@@ -1,0 +1,8 @@
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+https://degoo.org/* https://deg.ooo/:splat 301!
+http://degoo.org/* https://deg.ooo/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://degooo.netlify.com/* https://deg.ooo/:splat 301!
