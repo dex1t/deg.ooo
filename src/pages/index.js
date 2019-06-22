@@ -6,7 +6,7 @@ import * as animationData from '../images/loading.json'
 import '../base.css' //tent
 
 const notionUrl =
-  'https://www.notion.so/About-dex1t-65fa41c6c6804426bef7adb2a66c5117'
+  'https://www.notion.so/Takaya-Deguchi-65fa41c6c6804426bef7adb2a66c5117'
 const Container = styled.div`
   display: flex;
   align-items: flex-start;
