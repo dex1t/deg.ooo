@@ -28,7 +28,7 @@ const Layout = ({ children, data }) => (
         },
         { property: 'og:description', content: desc },
         { property: 'og:title', content: 'Takaya Deguchi' },
-        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@dex1t' },
       ]}
     >
