@@ -7,7 +7,7 @@ import favicon from '../images/favicon.ico'
 import ogp from '../images/ogp.png'
 
 const desc =
-  '出口貴也 @dex1t | UXエンジニア。戦略作りや体験設計から、UIデザイン、Webやモバイルアプリの開発まで、一気通貫したプロダクトづくりが強み。デザインとエンジニアリングを行き来しながら、新しいモノをつくるのが好き。'
+  '出口貴也 @dex1t UXエンジニア。戦略作りや体験設計から、UIデザイン、Webやモバイルアプリの開発まで、一気通貫したプロダクトづくりが強み。デザインとエンジニアリングを行き来しながら、新しいモノをつくるのが好き。'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -20,21 +20,14 @@ const Layout = ({ children, data }) => (
         },
         {
           name: 'author',
-          content: '出口 貴也',
-        },
-        {
-          name: 'author',
-          content: 'Takaya Deguchi',
-        },
-        {
-          name: 'author',
-          content: 'dex1t',
+          content: '出口貴也',
         },
         {
           property: 'og:image',
           content: ogp,
         },
         { property: 'og:description', content: desc },
+        { property: 'og:title', content: 'Takaya Deguchi' },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:site', content: '@dex1t' },
       ]}
