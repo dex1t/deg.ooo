@@ -33,8 +33,7 @@ const Layout = ({ children, data }) => (
         { name: 'twitter:site', content: '@dex1t' },
         {
           name: 'twitter:player',
-          content:
-            'https://www.notion.so/Takaya-Deguchi-65fa41c6c6804426bef7adb2a66c5117',
+          content: 'https://deg.ooo/',
         },
         { name: 'twitter:player:width', content: '800' },
         { name: 'twitter:player:height', content: '450' },

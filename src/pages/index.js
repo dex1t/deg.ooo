@@ -22,9 +22,11 @@ const IndexPage = () => (
         {
           eventName: 'loopComplete',
           callback: () => {
-            setTimeout(() => {
-              location.href = notionUrl
-            }, 5)
+            if (!location.search.includes('embed=1')) {
+              setTimeout(() => {
+                location.href = notionUrl
+              }, 5)
+            }
           },
         },
       ]}
