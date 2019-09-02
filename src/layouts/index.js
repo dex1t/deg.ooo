@@ -28,15 +28,15 @@ const Layout = ({ children, data }) => (
         },
         { property: 'og:description', content: desc },
         { property: 'og:title', content: 'Takaya Deguchi' },
-        // { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:card', content: 'player' },
         { name: 'twitter:site', content: '@dex1t' },
-        {
-          name: 'twitter:player',
-          content: 'https://deg.ooo/?embed=1',
-        },
-        { name: 'twitter:player:width', content: '800' },
-        { name: 'twitter:player:height', content: '450' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        // { name: 'twitter:card', content: 'player' },
+        // {
+        //   name: 'twitter:player',
+        //   content: 'https://deg.ooo/?embed=1',
+        // },
+        // { name: 'twitter:player:width', content: '800' },
+        // { name: 'twitter:player:height', content: '450' },
         { name: 'twitter:image', content: ogp },
       ]}
     >
