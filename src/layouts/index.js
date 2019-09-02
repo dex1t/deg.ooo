@@ -28,8 +28,17 @@ const Layout = ({ children, data }) => (
         },
         { property: 'og:description', content: desc },
         { property: 'og:title', content: 'Takaya Deguchi' },
-        { name: 'twitter:card', content: 'summary_large_image' },
+        // { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:card', content: 'player' },
         { name: 'twitter:site', content: '@dex1t' },
+        {
+          name: 'twitter:player',
+          content:
+            'https://www.notion.so/Takaya-Deguchi-65fa41c6c6804426bef7adb2a66c5117',
+        },
+        { name: 'twitter:player:width', content: '800' },
+        { name: 'twitter:player:height', content: '450' },
+        { name: 'twitter:image', content: ogp },
       ]}
     >
       <link rel="icon" href={favicon} />
