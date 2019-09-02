@@ -33,7 +33,7 @@ const Layout = ({ children, data }) => (
         { name: 'twitter:site', content: '@dex1t' },
         {
           name: 'twitter:player',
-          content: 'https://deg.ooo/',
+          content: 'https://deg.ooo/?embed=1',
         },
         { name: 'twitter:player:width', content: '800' },
         { name: 'twitter:player:height', content: '450' },
