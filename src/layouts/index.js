@@ -6,8 +6,7 @@ import 'normalize.css'
 import favicon from '../images/favicon.ico'
 import ogp from '../images/ogp.png'
 
-const desc =
-  '出口貴也 @dex1t UXエンジニア。戦略作りや体験設計から、UIデザイン、Webやモバイルアプリの開発まで、一気通貫したプロダクトづくりが強み。デザインとエンジニアリングを行き来しながら、新しいモノをつくるのが好き。'
+const desc = '出口貴也 (Takaya Deguchi) - Design Engineer & Service Designer'
 
 const Layout = ({ children, data }) => (
   <div>
@@ -22,14 +21,14 @@ const Layout = ({ children, data }) => (
           name: 'author',
           content: '出口貴也',
         },
-        {
-          property: 'og:image',
-          content: ogp,
-        },
+        // {
+        //   property: 'og:image',
+        //   content: ogp,
+        // },
         { property: 'og:description', content: desc },
         { property: 'og:title', content: 'Takaya Deguchi' },
         { name: 'twitter:site', content: '@dex1t' },
-        { name: 'twitter:card', content: 'summary_large_image' },
+        // { name: 'twitter:card', content: 'summary_large_image' },
         // { name: 'twitter:card', content: 'player' },
         // {
         //   name: 'twitter:player',
@@ -37,11 +36,11 @@ const Layout = ({ children, data }) => (
         // },
         // { name: 'twitter:player:width', content: '800' },
         // { name: 'twitter:player:height', content: '450' },
-        { name: 'twitter:image', content: ogp },
+        // { name: 'twitter:image', content: ogp },
       ]}
     >
       <link rel="icon" href={favicon} />
-      <link rel="canonical" href="https://deg.ooo" />
+      <link rel="canonical" href="https://5m.design" />
     </Helmet>
     <main>{children()}</main>
   </div>
